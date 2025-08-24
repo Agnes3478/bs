@@ -25,4 +25,10 @@ catalog:
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
-      target: /home/agnes/bs/backstage/catalog/entities/users.yaml 
+      target: /home/agnes/bs/backstage/catalog/entities/users.yaml
+      rules:
+        - allow: [User]
+    - type: file
+      target: /home/agnes/bs/backstage/catalog/entities/groups.yaml
+      rules:
+        - allow: [Group]
